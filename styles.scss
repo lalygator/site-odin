@@ -1,0 +1,201 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+//variables
+
+$text_color: #F9FAF8;
+$darker_text_color: #E5E7EB;
+$darkest_text_color: #565656;
+$test: #3882F6;
+
+
+
+.partie1, footer, header{
+    background-color: #1F2937; //couleur de fond
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    padding-bottom: 80px;
+    .header_logo{
+        font-size: 24px;
+        color: $text_color;  //blanc
+        margin: 0%;
+    }
+    p{
+        position: relative;
+        right: -70px;
+    }
+    .link{
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+        position: relative;
+        left: -70px;
+        a{
+            text-decoration: none;
+            color: $darker_text_color; //gris
+            font-size: 18px;
+        }
+    }
+}
+
+
+
+.partie1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    padding-bottom: 100px;
+    .par_partie1{
+        width: 30%;
+        h1{ //hero main
+            color: $text_color; //blanc
+            font-size: 48px;
+            font-weight: extra-bold;
+            margin: 0%;
+        }
+        button{
+            background-color: #3882F6; //bleu
+            border: none;
+            border-radius: 5px;
+            color: $text_color; //blanc
+            font-size: 15px;
+            padding: 7px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 13px;
+        }
+        .second_text{
+            color: $darker_text_color; //gris
+            font-size: 18px;
+        }
+        
+    }
+    .placeholder{
+        display: flex;
+        width: 50%;
+        height: 14rem;
+        background-color: $darkest_text_color; //gris foncé : utilisé 3 fois
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: $text_color; //blanc
+    }
+}
+
+
+.partie2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8%;
+    h2{
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        font-size: 30px;
+    }
+    .boite{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        .img_para{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                width: 76%;
+                text-align: center;
+                padding-top: 5%;
+                color: $darkest_text_color; //gris foncé : utilisé 3 fois
+            }
+            img{
+                width: 150px;
+                aspect-ratio: 1/1;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+.quote{
+    background-color: $darker_text_color; //gris 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    .quote_text{
+        font-size: 36px;
+        color: $darkest_text_color; //gris foncé : utilisé 3 fois
+        font-weight: 60;
+        width: 60%;
+    }
+    h4{
+        position: relative;
+        right: -315px;
+        top: 10px;
+    }
+}
+
+.partie3{
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    justify-content: center;
+    align-items: center;
+    .autre_boite{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #3882F6; //bleu
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-radius: 10px;
+        button{
+            border: solid 2px;
+            border-color: $text_color ; //blanc
+            border-radius: 10px;
+            color: $text_color; //blanc
+            width: 15%;
+            font-size: 18px;
+            background-color: #3882F6; //bleu
+        }
+        p{
+            color: $darker_text_color; //gris
+            padding-top: 5px;
+        }
+        .cote{
+            h5{
+                font-size: 20px;
+                color: $text_color; //blanc
+            }
+        }
+    
+    }
+}
+
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: $darker_text_color; //gris
+    text-align: center;
+}
